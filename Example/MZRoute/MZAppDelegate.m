@@ -7,12 +7,18 @@
 //
 
 #import "MZAppDelegate.h"
+#import "MZFirstViewController.h"
 
 @implementation MZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    UINavigationController *naiVC = [[UINavigationController alloc] initWithRootViewController:[[MZFirstViewController alloc] init]];
+    self.window.rootViewController = naiVC;
     return YES;
 }
 

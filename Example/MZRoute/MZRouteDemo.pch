@@ -1,0 +1,15 @@
+//
+//  MZRouteDemo.pch
+//  MZRoute
+//
+//  Created by 张建 on 2018/6/28.
+//  Copyright © 2018 MaricleZhang. All rights reserved.
+//
+
+#ifndef MZRouteDemo_pch
+#define MZRouteDemo_pch
+
+#define MZNativeScheme @"MZRouteDemo"
+#define MZNativeURL(str) [NSString stringWithFormat:@"%@://%@",MZNativeScheme,str]
+
+#endif /* MZRouteDemo_pch */

@@ -1,0 +1,6 @@
+framework module MZRoute {
+  umbrella header "MZRoute-umbrella.h"
+
+  export *
+  module * { export * }
+}
